@@ -16,12 +16,14 @@ public class EmployeeDbContext : DbContext
 
         if (!string.IsNullOrEmpty(cloudConnectionString))
         {
+            Console.WriteLine($"===> CONNECTING TO CLOUD DB: {cloudConnectionString}");
             optionsBuilder.UseMySql(cloudConnectionString, ServerVersion.AutoDetect(cloudConnectionString));
         }
         else
         {
+            Console.WriteLine("===> CONNECTING TO LOCAL UBUNTU DB");
             // 2. Your fallback local database connection string for testing locally
-            var localString = "Server=localhost;Database=emp_db;Uid=root;Pwd=root;";
+            var localString = "Server=172.17.64.1;Database=shop4;Uid=root;Pwd=root;";
             optionsBuilder.UseMySql(localString, ServerVersion.AutoDetect(localString));
         }
     }
