@@ -10,14 +10,12 @@ public class EmployeeApiController : ControllerBase
 {
     private readonly EmpModel model = new();
 
-    // 1. GET ALL EMPLOYEES
     [HttpGet]
     public IActionResult GetEmployees()
     {
         return Ok(model.FetchEmployees());
     }
 
-    // 2. CREATE EMPLOYEE
     [HttpPost]
     public IActionResult AddEmployee([FromBody] Emp emp)
     {
@@ -25,7 +23,6 @@ public class EmployeeApiController : ControllerBase
         return Ok(new { Message = "Employee Added Successfully" });
     }
 
-    // 3. UPDATE EMPLOYEE
     [HttpPut("{id}")]
     public IActionResult UpdateEmployee(int id, [FromBody] Emp emp)
     {
@@ -39,7 +36,6 @@ public class EmployeeApiController : ControllerBase
         return Ok(new { Message = "Employee Updated Successfully" });
     }
 
-    // 4. DELETE EMPLOYEE
     [HttpDelete("{id}")]
     public IActionResult RemoveEmployee(int id)
     {
