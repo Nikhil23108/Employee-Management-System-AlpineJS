@@ -1,0 +1,12 @@
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/DemoApp
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/appsettings.Development.json
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/appsettings.json
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/DemoApp.dll
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/DemoApp.deps.json
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/DemoApp.runtimeconfig.json
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/DemoApp.pdb
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/Microsoft.EntityFrameworkCore.dll
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/Microsoft.EntityFrameworkCore.Relational.dll
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/MySqlConnector.dll
+/home/nikhil/Nikhil/Dotnet/Assignment9/DemoApp1/publish/Pomelo.EntityFrameworkCore.MySql.dll
