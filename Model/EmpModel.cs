@@ -12,7 +12,6 @@ public class EmpModel
         return ctx.Employees.ToList();
     }
 
-    // Fixed: Passing whole object cleanly maps directly to EF types
     public void AcceptEmployee(Emp emp)
     {
         using var ctx = new EmployeeDbContext();
@@ -20,7 +19,6 @@ public class EmpModel
         ctx.SaveChanges();
     }
 
-    // Fixed: Directly updates properties matching your precise decimal/DateOnly schema
     public bool ModifyEmployee(int id, Emp updatedData)
     {
         using var ctx = new EmployeeDbContext();
