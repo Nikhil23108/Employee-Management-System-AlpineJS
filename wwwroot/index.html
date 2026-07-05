@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Portal</title>
     <style>
-        /* Modern CSS Reset & Core Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f7f6;
@@ -40,7 +39,6 @@
             margin-top: 20px;
         }
 
-        /* Form Layout Grid */
         .form-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -62,7 +60,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Form Inputs Style */
         input {
             padding: 10px 14px;
             border: 1px solid #ccd1d9;
@@ -79,7 +76,6 @@
             box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
         }
 
-        /* Action Buttons */
         button {
             padding: 11px 22px;
             font-size: 14px;
@@ -121,7 +117,6 @@
             margin: 30px 0;
         }
 
-        /* Modernized Data Table Styles */
         .table-container {
             overflow-x: auto;
             margin-top: 10px;
@@ -165,7 +160,6 @@
             background-color: #edf2f7;
         }
 
-        /* Table Action Buttons for Edit/Delete */
         .btn-action {
             padding: 6px 12px;
             font-size: 12px;
@@ -304,7 +298,6 @@
                 html = `<tr><td colspan="9" style="text-align: center;">No employees found in system.</td></tr>`;
             } else {
                 loadedEmployeesList.forEach(e => {
-                    // Match casing to your backend schema maps
                     let commissionValue = e.comm !== null && e.comm !== undefined ? `$${e.comm}` : "-";
                     let rawDate = e.hiredate ? e.hiredate.split('T')[0] : "-";
 
@@ -355,7 +348,6 @@
                 return isFloat ? parseFloat(val) : parseInt(val, 10);
             };
 
-            // CHANGES MADE HERE: Property keys match casing inside Emp.cs model
             let updatedEmp = {
                 Id: id,
                 ENAME: getStringValue(`edit-name-${id}`),
@@ -417,7 +409,6 @@
                 return isFloat ? parseFloat(val) : parseInt(val, 10);
             };
 
-            // CHANGES MADE HERE: Property keys match casing inside Emp.cs model
             let emp = {
                 Id: parseNum(getInputValue("id")),
                 ENAME: getInputValue("name"),
